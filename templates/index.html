@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block body %}
 
-  <head>
-    <meta charset="utf-8">
-    <title>Loan Calculator</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-
-  <body>
-	<div id="container">
-		<div id="header">
-			<h1>Loan Calculator</h1>
-		</div>
-		
-		<div id="content">
-			<div id="main">
 				<h2>Calculate Monthly Loan Payment</h2>
 				<hr>
 				
-				<form action="" method="POST">  
+				<form action="" id= numform method="POST">  
 				
 				<p>
 			    	<label for="loanAmount"> 
@@ -46,7 +32,7 @@
                 
                 <p>
 					<label for="loanPay"> 
-						Loan Payment: <type="number" name="loanPay" id= "loanPay">
+						Loan Payment: <type="number" name="loanPay" id= "loanPay"> 
 					</label>
 				</p>
 
@@ -54,20 +40,7 @@
 
 				<input type="reset" value="Clear">
 				
-				</form>  
+                </form>  
 
-
-
-
-
-
-			</div>
-		</div>
-	</div>
-	<div id="footer">
-		&copy; MSCI:3300 2020 - LOAN CALCULATOR
-	</div>
-
- </body>
-
-</html>
+                
+{% endblock %}

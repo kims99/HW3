@@ -1,11 +1,7 @@
-#body {
+body{
     background-color: #ffffff;
   }
-  
-  /br {
-      color: black;
-  }
-  
+   
   #header{
     background-color: #333333;
     color: white;
@@ -19,7 +15,6 @@
   }
   
   #main{
-  
     border: 1px solid #333333;
     padding: 10px;
   }
