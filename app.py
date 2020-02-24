@@ -12,21 +12,17 @@ def index():
         loan = float(form['loanAmount'])
         numPay = float(form['numPayments'])
         intRate = float(form['intRate'])
-        discount = float(form['discount'])
-        totalPay = float(form['loanPay'])
 
-        print(loan)
-        print(numPay)
-        print(intRate)
-        print(discount)
-        print(totalPay)
+        #print(loan)
+        #print(numPay)
+        #print(intRate)
 
         A = loan
         n = numPay * 12
         i = intRate / 12
-        D = (((1 + i) ^n ) - 1 ) / ( i (1 + i) ^n)
+        D = (((1 + i)**n ) - 1 ) / ( i*(1 + i)**n)
         P = A/D 
-
+        
         print(P)
 
 
