@@ -21,6 +21,15 @@ def index():
         print(discount)
         print(totalPay)
 
+        A = loan
+        n = numPay * 12
+        i = intRate / 12
+        D = (((1 + i) ^n ) - 1 ) / ( i (1 + i) ^n)
+        P = A/D 
+
+        print(P)
+
+
     return render_template('index.html', pageTitle='Loan Calculator')
     
 
