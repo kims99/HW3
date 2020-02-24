@@ -1,15 +1,73 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Loan Calculator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+  <body>
+	<div id="container">
+		<div id="header">
+			<h1>Loan Calculator</h1>
+		</div>
+		
+		<div id="content">
+			<div id="main">
+				<h2>Calculate Monthly Loan Payment</h2>
+				<hr>
+				
+				<form action="" method="POST">  
+				
+				<p>
+			    	<label for="loanAmount"> 
+						Loan Amount: <input type="text" name="loanAmount" id="loanAmount" placeholder="amount" autofocus required>
+					</label>
+				</p>
+
+				<p>
+					<label for="numPayments"> 
+						Number of Periodic Payments: <input type="text" name="numPayments" id= "numPayments" placeholder="payments" required>
+					</label>
+                </p>
+                
+                <p>
+					<label for="intRate"> 
+						Periodic Interest Rate: <input type="text" name="intRate" id= "intRate" placeholder="interest rate" required>
+					</label>
+                </p>
+                
+                <p>
+					<label for="discount"> 
+						Discount Factor: <input type="text" name="discount" id= "discount" placeholder="discount" required>
+					</label>
+                </p>
+                
+                <p>
+					<label for="loanPay"> 
+						Loan Payment: <input type="text" name="loanPay" id= "loanPay" required>
+					</label>
+				</p>
+
+				<input type="submit" value="Submit">
+
+				<input type="reset" value="Clear">
+				
+				</form>  
 
 
 
-{% block body %}
 
 
 
-	<h2> This is my Flask server! </h2>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		&copy; MSCI:3300 2020 - LOAN CALCULATOR
+	</div>
 
+ </body>
 
-
-
-
-{% endblock %}
+</html>

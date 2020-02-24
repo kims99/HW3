@@ -1,33 +1,30 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 
-
   <head>
-
     <meta charset="utf-8">
-
-    <title>{{ pageTitle }}</title>
-
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
-
+    <title>Loan Calculator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
-
-
   <body>
+	<div id="container">
+		<div class="header">
+			<h1>Monthly Loan Calculator</h1>
+		</div>
+		
+		<div id="content">
+			<div id="main">
+				<h2></h2>
 
 
-
-      {% block body %}
-
-	  {% endblock %}
-
-
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		&copy; MSCI:3300 2020 - LOAN CALCULATOR
+	</div>
 
  </body>
-
-
 
 </html>

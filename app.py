@@ -1,12 +1,28 @@
 # Loan Calculator, app.py
 # Kimberly Souravong 02/23/2020
 
-from flask import Flask, render_template, request
+from flask import Flask
+from flask import render_template, request
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html', pageTitle='Flask Server Home Page')
+    if request.method == 'POST':
+        form = request.form
+        loan = float(form['loanAmount'])
+        numPay = float(form['numPayments'])
+        intRate = float(form['intRate'])
+        discount = float(form['discount'])
+        totalPay = float(form['loanPay'])
+
+        print(loan)
+        print(numPay)
+        print(intRate)
+        print(discount)
+        print(totalPay)
+
+    return render_template('index.html', pageTitle='Loan Calculator')
+    
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
