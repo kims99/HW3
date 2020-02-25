@@ -24,7 +24,10 @@ def index():
         P = A/D 
         P = round(P,2)
         
-        print(P)
+        #print(P)
+
+        total = "The monthly loan payment is ${0:,.2f}".format(P)
+        return render_template('index.html', display=total, pageTitle='Loan Calculator')
 
     return render_template('index.html', pageTitle='Loan Calculator')
     
